@@ -33,13 +33,11 @@ a.device {
 }
 
 .card-container {
-    max-width: 100%;
     border-collapse: collapse;
     overflow-y: auto;
     display: block;
     width: 100%;
-    table-layout: fixed;
-    white-space: nowrap;
+    table-layout: auto;
 }
 
 .card-container, th, td {
@@ -49,16 +47,10 @@ a.device {
 th, td {
     padding: 10px;
     text-align: center;
-    word-wrap: break-word;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .card-container th {
-    position: sticky;
-    top: 0;
     background-color: #f1f1f1;
-    z-index: 1;
     cursor: pointer;
 }
 
