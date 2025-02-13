@@ -3,28 +3,29 @@ main {
     background-color: #f5f5f5;
 }
 
-h1 {
+h1, p {
     text-align: center;
+}
+
+h1 {
     font-size: 25px;
 }
 
-p {
-    text-align: center;
+a.main-up, a.device {
+    text-decoration: none;
 }
 
 a.main-up {
     color: gray;
-    text-decoration: none;
 }
 
 a.device {
     color: black;
-    text-decoration: none;
 }
 
 .card {
     margin: 0 auto;
-    max-width: 650px;
+    max-width: 689px;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -37,27 +38,27 @@ a.device {
     overflow-y: auto;
     display: block;
     width: 100%;
-    table-layout: auto;
+    table-layout: fixed;
+    white-space: nowrap;
 }
 
-.card-container,
-th, td {
+.card-container, th, td {
     border: 1px solid #ddd;
 }
 
 th, td {
     padding: 10px;
     text-align: center;
-    width: auto;
     word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card-container th {
     position: sticky;
-    top: 0px;
+    top: 0;
     background-color: #f1f1f1;
     z-index: 1;
-    border-top: 0px;
     cursor: pointer;
 }
 
