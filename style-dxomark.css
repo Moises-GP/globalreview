@@ -58,4 +58,9 @@ th, td {
     background-color: #f1f1f1;
     z-index: 1;
     border-top: 0px;
+    cursor: pointer;
+}
+
+.card-container th:hover {
+    background-color: #ddd;
 }
