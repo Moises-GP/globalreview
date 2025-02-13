@@ -2,19 +2,32 @@ function sortTableByColumnAndUpdateRank(columnIndex) {
     const table = document.querySelector(".card-container tbody");
     const rows = Array.from(table.rows);
 
-    const rowValues = rows.map(row => {
+    const rowValues = rows.map((row, index) => {
         const cellValue = row.cells[columnIndex].textContent.trim() === "-" ? -1 : parseInt(row.cells[columnIndex].textContent.trim());
-        return { row, value: cellValue };
+        const deviceName = row.cells[1].textContent.trim();
+        const firstWord = deviceName.split(' ')[0]; // Obtener la primera palabra del nombre del dispositivo
+        return { row, value: cellValue, name: deviceName, firstWord: firstWord, originalIndex: index };
     });
 
-    rowValues.sort((a, b) => b.value - a.value);
+    rowValues.sort((a, b) => {
+        if (b.value === a.value) {
+            return a.firstWord.localeCompare(b.firstWord);
+        }
+        return b.value - a.value;
+    });
 
     while (table.firstChild) {
         table.removeChild(table.firstChild);
     }
 
-    rowValues.forEach((rowValue, rank) => {
-        rowValue.row.cells[0].textContent = rank + 1;
+    let previousValue = null;
+    rowValues.forEach((rowValue, index) => {
+        if (previousValue !== null && rowValue.value === previousValue) {
+            rowValue.row.cells[0].textContent = "=";
+        } else {
+            rowValue.row.cells[0].textContent = index + 1;
+        }
+        previousValue = rowValue.value;
         table.appendChild(rowValue.row);
     });
 }
