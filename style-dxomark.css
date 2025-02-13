@@ -64,3 +64,9 @@ th, td {
 .card-container th:hover {
     background-color: #ddd;
 }
+
+.card-container th:nth-child(1):hover,
+.card-container th:nth-child(2):hover {
+    background-color: #f1f1f1;
+    cursor: default;
+}
