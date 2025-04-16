@@ -5,7 +5,7 @@ function sortTableByColumnAndUpdateRank(columnIndex) {
     const rowValues = rows.map((row, index) => {
         const cellValue = row.cells[columnIndex].textContent.trim() === "-" ? -1 : parseInt(row.cells[columnIndex].textContent.trim());
         const deviceName = row.cells[1].textContent.trim();
-        const firstWord = deviceName.split(' ')[0]; // Obtener la primera palabra del nombre del dispositivo
+        const firstWord = deviceName.split(' ')[0];
         return { row, value: cellValue, name: deviceName, firstWord: firstWord, originalIndex: index };
     });
 
@@ -31,7 +31,6 @@ function sortTableByColumnAndUpdateRank(columnIndex) {
         table.appendChild(rowValue.row);
     });
 
-    // Actualizar la clase 'selected' en los encabezados
     const headers = document.querySelectorAll(".card-container th");
     headers.forEach((header, idx) => {
         if (idx === columnIndex) {
