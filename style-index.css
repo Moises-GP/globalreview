@@ -73,3 +73,7 @@ a {
 .card-content.active {
     display: block;
 }
+
+.card-header {
+    user-select: none;
+}
