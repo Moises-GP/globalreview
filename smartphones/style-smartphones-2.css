@@ -28,9 +28,9 @@ p {
 
 .smartphones {
     display: flex;
-    gap: 30px; /* Aumenta el espacio entre los elementos */
+    gap: 30px;
     margin-top: 20px;
-    justify-content: center; /* Centra los elementos */
+    justify-content: center;
     flex-wrap: wrap;
     white-space: normal;
 }
