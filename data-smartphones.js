@@ -682,6 +682,7 @@ input.addEventListener('input', function() {
         coincidencias.slice(0, 12).forEach(p => {
             const div = document.createElement('div');
             div.textContent = p.nombre;
+            div.setAttribute('translate', 'no');
             div.style.cursor = 'pointer';
             div.style.padding = '5px';
             div.addEventListener('mousedown', function(e) {
