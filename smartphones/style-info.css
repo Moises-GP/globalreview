@@ -10,7 +10,7 @@
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-    padding: 18px 18px 18px 18px; /* igual que specs-card */
+    padding: 18px 18px 18px 18px;
     margin: 90px auto 20px auto;
 }
 
@@ -76,7 +76,7 @@
     margin-bottom: 32px;
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Espacio entre las cards */
+    gap: 20px;
 }
 
 .specs-card {
@@ -84,7 +84,7 @@
     border-radius: 8px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.08);
     border: 1px solid #ececec;
-    padding: 18px 18px 18px 18px; /* igual que info-card */
+    padding: 18px 18px 18px 18px;
 }
 
 .specs-header {
@@ -131,7 +131,7 @@
     padding-bottom: 8px;
     background: #fafbfc;
     border-radius: 4px;
-    text-align: center; /* <-- Añade esta línea */
+    text-align: center;
 }
 
 .brillo-barra-externa {
