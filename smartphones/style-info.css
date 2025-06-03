@@ -10,8 +10,9 @@
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-    padding: 18px 18px 18px 18px;
-    margin: 90px auto 20px auto;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin: 90px auto 15px auto;
 }
 
 .info-card h2 {
@@ -27,18 +28,12 @@
 .info-content {
     display: flex;
     align-items: stretch;
-    gap: 20px;
-    height: 220px;
+    height: 200px;
 }
 
 .info-img {
     width: 200px;
-    height: 100%;
-    border-radius: 8px;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.10);
-    background: #f7f7f7;
     object-fit: contain;
-    display: block;
 }
 
 .info-list {
@@ -79,11 +74,13 @@
     border-radius: 6px;
     overflow: hidden;
 }
+
 .info-card td {
     padding: 8px 10px;
     border-bottom: 1px solid #ececec;
     vertical-align: top;
 }
+
 .info-card tr:last-child td {
     border-bottom: none;
 }
@@ -123,19 +120,23 @@
     overflow: hidden;
     table-layout: fixed;
 }
+
 .specs-card td {
     padding: 8px 10px;
     border-bottom: 1px solid #ececec;
     vertical-align: top;
     font-size: 1em;
 }
+
 .specs-card tr:last-child td {
     border-bottom: none;
 }
+
 .specs-card td:first-child {
     width: 50%;
     word-break: break-word;
 }
+
 .specs-subtitle {
     font-weight: 600;
     font-size: 1.05em;
@@ -160,6 +161,7 @@
     margin-bottom: 2px;
     overflow: hidden;
 }
+
 .brillo-barra-interna {
     height: 100%;
     background: #3949ab;
