@@ -174,3 +174,14 @@
     border-radius: 4px;
     transition: width 0.6s cubic-bezier(.4,0,.2,1);
 }
+
+@media (max-width: 600px) {
+    .specs-card .specs-subtitle + table + .specs-subtitle + table > tbody > tr > td > div[style*="display: flex; justify-content: space-between; align-items: flex-end;"] {
+    flex-direction: column !important;
+    gap: 10px;
+    align-items: stretch !important;
+    }
+    .specs-card .specs-subtitle + table + .specs-subtitle + table > tbody > tr > td > div[style*="display: flex; justify-content: space-between; align-items: flex-end;"] > div {
+    width: 100% !important;
+}
+}
