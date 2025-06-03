@@ -1,15 +1,3 @@
-//Barra de brillo
-document.addEventListener("DOMContentLoaded", function() {
-    const valorSpan = document.getElementById("brillo-valor");
-    const barraInterna = document.getElementById("brillo-barra-interna");
-
-    const brilloMaximo = 2000;
-
-    if (valorSpan && barraInterna) {
-        const brilloActual = parseInt(valorSpan.getAttribute("data-valor")) || 0;
-        const porcentaje = Math.min((brilloActual / brilloMaximo) * 100, 100);
-        barraInterna.style.width = porcentaje + "%";
-    }
 //Barra de pantalla cuerpo
     const valorPantallaCuerpo = document.getElementById("pantalla-cuerpo-valor");
     const barraPantallaCuerpo = document.getElementById("pantalla-cuerpo-barra");
@@ -19,13 +7,26 @@ document.addEventListener("DOMContentLoaded", function() {
         barraPantallaCuerpo.style.width = Math.min(porcentajePantallaCuerpo, 100) + "%";
     }
 
+//Barra de brillo
+document.addEventListener("DOMContentLoaded", function() {
+    const valorSpan = document.getElementById("brillo-valor");
+    const barraInterna = document.getElementById("brillo-barra-interna");
+
+    const brilloMaximo = 2372;
+
+    if (valorSpan && barraInterna) {
+        const brilloActual = parseInt(valorSpan.getAttribute("data-valor")) || 0;
+        const porcentaje = Math.min((brilloActual / brilloMaximo) * 100, 100);
+        barraInterna.style.width = porcentaje + "%";
+    }
+
     // Barras Geekbench
     const singleBar = document.getElementById("geekbench-single-bar");
     const multiBar = document.getElementById("geekbench-multi-bar");
     const singleValor = document.getElementById("geekbench-single-valor");
     const multiValor = document.getElementById("geekbench-multi-valor");
-    const singleMax = 5000;
-    const multiMax = 10000;
+    const singleMax = 3453;
+    const multiMax = 9532;
 
     if (singleBar && singleValor) {
         const singleValue = parseInt(singleValor.getAttribute("data-valor")) || 0;
@@ -41,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Barra AnTuTu
     const antutuValor = document.getElementById("antutu-valor");
     const antutuBarra = document.getElementById("antutu-barra");
-    const antutuMax = 2000000;
+    const antutuMax = 3063922;
 
     if (antutuValor && antutuBarra) {
         const valor = parseInt(antutuValor.getAttribute("data-valor")) || 0;
@@ -49,15 +50,62 @@ document.addEventListener("DOMContentLoaded", function() {
         antutuBarra.style.width = porcentaje + "%";
     }
 
-    // Barra Duración general de la batería
-    const bateriaDuracionValor = document.getElementById("bateria-duracion-valor");
-    const bateriaDuracionBarra = document.getElementById("bateria-duracion-barra");
-    const bateriaDuracionMax = 35.1;
+// 3DMark Wild Life barra
+    const wildlifeValor = document.getElementById("wildlife-valor");
+    const wildlifeBarra = document.getElementById("wildlife-barra");
+    const wildlifeMax = 21252;
 
-    if (bateriaDuracionValor && bateriaDuracionBarra) {
-        const valor = parseFloat(bateriaDuracionValor.getAttribute("data-valor")) || 0;
-        const porcentaje = Math.min((valor / bateriaDuracionMax) * 100, 100);
-        bateriaDuracionBarra.style.width = porcentaje + "%";
+    if (wildlifeValor && wildlifeBarra) {
+        const valor = parseInt(wildlifeValor.getAttribute("data-valor")) || 0;
+        const porcentaje = Math.min((valor / wildlifeMax) * 100, 100);
+        wildlifeBarra.style.width = porcentaje + "%";
+    }
+
+    // PCMark 3.0 barra
+    const pcmarkValor = document.getElementById("pcmark-valor");
+    const pcmarkBarra = document.getElementById("pcmark-barra");
+    const pcmarkMax = 19982;
+
+    if (pcmarkValor && pcmarkBarra) {
+        const valor = parseInt(pcmarkValor.getAttribute("data-valor")) || 0;
+        const porcentaje = Math.min((valor / pcmarkMax) * 100, 100);
+        pcmarkBarra.style.width = porcentaje + "%";
+    }
+
+    // Barra Calidad de la fotografía
+    const dxomarkFotoValor = document.getElementById("dxomark-foto-valor");
+    const dxomarkFotoBarra = document.getElementById("dxomark-foto-barra");
+    const dxomarkFotoMax = 169;
+
+    function actualizarDxOMarkFotoBarra() {
+        if (dxomarkFotoValor && dxomarkFotoBarra) {
+            const valor = parseFloat(dxomarkFotoValor.getAttribute("data-valor")) || 0;
+            const porcentaje = Math.min((valor / dxomarkFotoMax) * 100, 100);
+            dxomarkFotoBarra.style.width = porcentaje + "%";
+        }
+    }
+    actualizarDxOMarkFotoBarra();
+    if (dxomarkFotoValor) {
+        const observerFoto = new MutationObserver(actualizarDxOMarkFotoBarra);
+        observerFoto.observe(dxomarkFotoValor, { attributes: true, attributeFilter: ['data-valor'] });
+    }
+
+    // Barra Calidad de vídeo
+    const dxomarkVideoValor = document.getElementById("dxomark-video-valor");
+    const dxomarkVideoBarra = document.getElementById("dxomark-video-barra");
+    const dxomarkVideoMax = 159;
+
+    function actualizarDxOMarkVideoBarra() {
+        if (dxomarkVideoValor && dxomarkVideoBarra) {
+            const valor = parseFloat(dxomarkVideoValor.getAttribute("data-valor")) || 0;
+            const porcentaje = Math.min((valor / dxomarkVideoMax) * 100, 100);
+            dxomarkVideoBarra.style.width = porcentaje + "%";
+        }
+    }
+    actualizarDxOMarkVideoBarra();
+    if (dxomarkVideoValor) {
+        const observerVideo = new MutationObserver(actualizarDxOMarkVideoBarra);
+        observerVideo.observe(dxomarkVideoValor, { attributes: true, attributeFilter: ['data-valor'] });
     }
 
     // Barra DxOMark Score
@@ -80,54 +128,7 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(dxomarkScoreValor, { attributes: true, attributeFilter: ['data-valor'] });
     }
 
-    // Barra Calidad de la fotografía
-    const dxomarkFotoValor = document.getElementById("dxomark-foto-valor");
-    const dxomarkFotoBarra = document.getElementById("dxomark-foto-barra");
-    const dxomarkFotoMax = 160;
-
-    function actualizarDxOMarkFotoBarra() {
-        if (dxomarkFotoValor && dxomarkFotoBarra) {
-            const valor = parseFloat(dxomarkFotoValor.getAttribute("data-valor")) || 0;
-            const porcentaje = Math.min((valor / dxomarkFotoMax) * 100, 100);
-            dxomarkFotoBarra.style.width = porcentaje + "%";
-        }
-    }
-    actualizarDxOMarkFotoBarra();
-    if (dxomarkFotoValor) {
-        const observerFoto = new MutationObserver(actualizarDxOMarkFotoBarra);
-        observerFoto.observe(dxomarkFotoValor, { attributes: true, attributeFilter: ['data-valor'] });
-    }
-
-    // Barra Calidad de vídeo
-    const dxomarkVideoValor = document.getElementById("dxomark-video-valor");
-    const dxomarkVideoBarra = document.getElementById("dxomark-video-barra");
-    const dxomarkVideoMax = 165;
-
-    function actualizarDxOMarkVideoBarra() {
-        if (dxomarkVideoValor && dxomarkVideoBarra) {
-            const valor = parseFloat(dxomarkVideoValor.getAttribute("data-valor")) || 0;
-            const porcentaje = Math.min((valor / dxomarkVideoMax) * 100, 100);
-            dxomarkVideoBarra.style.width = porcentaje + "%";
-        }
-    }
-    actualizarDxOMarkVideoBarra();
-    if (dxomarkVideoValor) {
-        const observerVideo = new MutationObserver(actualizarDxOMarkVideoBarra);
-        observerVideo.observe(dxomarkVideoValor, { attributes: true, attributeFilter: ['data-valor'] });
-    }
-
-    // Barra Volumen máximo altavoces
-    const volumenMaximoValor = document.getElementById("volumen-maximo-valor");
-    const volumenMaximoBarra = document.getElementById("volumen-maximo-barra");
-    const volumenMaximoDB = 100; // Puedes ajustar el máximo si lo deseas
-
-    if (volumenMaximoValor && volumenMaximoBarra) {
-        const valor = parseFloat(volumenMaximoValor.getAttribute("data-valor")) || 0;
-        const porcentaje = Math.min((valor / volumenMaximoDB) * 100, 100);
-        volumenMaximoBarra.style.width = porcentaje + "%";
-    }
-
-    // Barra DxOMark Selfie - Fotografía
+// Barra DxOMark Selfie - Fotografía
     const dxomarkFotoSelfieValor = document.getElementById("dxomark-foto-selfie-valor");
     const dxomarkFotoSelfieBarra = document.getElementById("dxomark-foto-selfie-barra");
     const dxomarkFotoSelfieMax = 149;
@@ -181,25 +182,31 @@ document.addEventListener("DOMContentLoaded", function() {
         observerScoreSelfie.observe(dxomarkScoreSelfieValor, { attributes: true, attributeFilter: ['data-valor'] });
     }
 
-    // 3DMark Wild Life barra
-    const wildlifeValor = document.getElementById("wildlife-valor");
-    const wildlifeBarra = document.getElementById("wildlife-barra");
-    const wildlifeMax = 15000;
+    // Barra Duración general de la batería
+    const bateriaDuracionValor = document.getElementById("bateria-duracion-valor");
+    const bateriaDuracionBarra = document.getElementById("bateria-duracion-barra");
+    const bateriaDuracionMax = 35.1;
 
-    if (wildlifeValor && wildlifeBarra) {
-        const valor = parseInt(wildlifeValor.getAttribute("data-valor")) || 0;
-        const porcentaje = Math.min((valor / wildlifeMax) * 100, 100);
-        wildlifeBarra.style.width = porcentaje + "%";
+    if (bateriaDuracionValor && bateriaDuracionBarra) {
+        const valor = parseFloat(bateriaDuracionValor.getAttribute("data-valor")) || 0;
+        const porcentaje = Math.min((valor / bateriaDuracionMax) * 100, 100);
+        bateriaDuracionBarra.style.width = porcentaje + "%";
     }
 
-    // PCMark 3.0 barra
-    const pcmarkValor = document.getElementById("pcmark-valor");
-    const pcmarkBarra = document.getElementById("pcmark-barra");
-    const pcmarkMax = 20000;
+    // Barra Volumen máximo altavoces
+    const volumenMaximoValor = document.getElementById("volumen-maximo-valor");
+    const volumenMaximoBarra = document.getElementById("volumen-maximo-barra");
+    const volumenMaximoDB = 100;
 
-    if (pcmarkValor && pcmarkBarra) {
-        const valor = parseInt(pcmarkValor.getAttribute("data-valor")) || 0;
-        const porcentaje = Math.min((valor / pcmarkMax) * 100, 100);
-        pcmarkBarra.style.width = porcentaje + "%";
+    if (volumenMaximoValor && volumenMaximoBarra) {
+        const valor = parseFloat(volumenMaximoValor.getAttribute("data-valor")) || 0;
+        const porcentaje = Math.min((valor / volumenMaximoDB) * 100, 100);
+        volumenMaximoBarra.style.width = porcentaje + "%";
+    }
+
+    var h2 = document.querySelector('.info-card h2');
+    if (h2) {
+        h2.setAttribute('translate', 'no');
+        h2.classList.add('notranslate');
     }
 });
