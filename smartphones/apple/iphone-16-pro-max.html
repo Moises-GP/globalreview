@@ -41,9 +41,24 @@
             <a href="/globalreview/dxomark-ranking.html"><img src="/globalreview/Images/Ranking.png" class="menu-icon">DxOMark</a>
         </div>
 
-        <span>Beta</span>
+        <span class="search-icon" id="openSearch" style="margin-left:15px; margin-right:15px; cursor:pointer;">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <circle cx="10" cy="10" r="7" stroke="white" stroke-width="2"/>
+                <line x1="16" y1="16" x2="21" y2="21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </span>
     </nav>
 
+    <div id="searchOverlay" class="search-overlay">
+        <div id="searchMenu" class="search-modal">
+            <form id="form-busqueda" class="form-busqueda">
+                <input type="text" id="busqueda" class="input-busqueda" placeholder="Buscar" autocomplete="off">
+                <div id="sugerencias" class="sugerencias"></div>
+            </form>
+            <span id="closeSearch" class="close-search">&times;</span>
+        </div>
+    </div>
+    
     <main>
         <div class="info-card">
             <h2>Apple iPhone 16 Pro Max</h2>
@@ -681,6 +696,7 @@
     </main>
 
     <script src="/globalreview/script.js"></script>
+    <script src="/globalreview/data-smartphones.js"></script>
     <script src="/globalreview/smartphones/script-info.js"></script>
 
 </body>
