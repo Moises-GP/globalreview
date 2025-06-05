@@ -225,3 +225,7 @@ body {
 .close-search:hover {
     color: #1E2933;
 }
+
+.search-icon {
+    display: flex;
+}
