@@ -1,4 +1,5 @@
 .info-card, .specs-card {
+    max-width: 100%;
     box-sizing: border-box;
     width: 600px;
     margin-left: auto;
