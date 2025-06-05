@@ -1,17 +1,16 @@
 .info-card, .specs-card {
     box-sizing: border-box;
-    width: 100%;
-    max-width: 600px;
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .info-card {
     background: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.08);
     padding-top: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     margin: 90px auto 15px auto;
 }
 
@@ -63,8 +62,8 @@
 }
 
 .specs-section {
-    margin-top: 8px;
-    margin-bottom: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -96,7 +95,7 @@
 }
 
 .specs-card td {
-    padding: 8px;
+    padding: 10px;
     border-bottom: 1px solid #ececec;
     vertical-align: middle !important;
     text-align: left !important;
@@ -115,9 +114,8 @@
 .specs-subtitle {
     font-weight: 600;
     font-size: 1.05em;
-    margin: 18px 0 8px 0;
-    padding-left: 18px;
-    color: #222;
+    margin: 10px 0 0px 0;
+    color: #24282b;
     border-top: 1px solid #ececec;
     border-bottom: 1px solid #ececec;
     padding-top: 10px;
@@ -128,25 +126,16 @@
 
 .brillo-barra-externa {
     width: 100%;
-    height: 6px;
+    height: 5px;
     background: #e0e0e0;
-    border-radius: 4px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    border-radius: 5px;
     overflow: hidden;
 }
 
 .brillo-barra-interna {
     height: 100%;
     background: #3949ab;
-    border-radius: 4px;
-}
-
-#pantalla-cuerpo-barra {
-    background: #3949ab;
-    height: 100%;
-    border-radius: 4px;
-    transition: width 0.6s cubic-bezier(.4,0,.2,1);
+    border-radius: 5px;
 }
 
 @media (max-width: 600px) {
