@@ -14,29 +14,29 @@
     <nav class="navbar" aria-label="Main navigation">
         <div class="toggle-menu" id="toggleMenu" aria-label="Toggle menu" aria-expanded="false" aria-controls="menuItems"></div>
         <div class="button-group-desktop" aria-label="Desktop navigation">
-            <a href="/globalreview/index.html" class="logo" aria-labelledby="logoTitle">GlobalReview.Net</a>
-            <a href="/globalreview/phone-compare.html">Smartphones</a>
-            <a href="/globalreview/soc-ranking.html">SoC Ranking</a>
-            <a href="/globalreview/soc-compare.html">SoC Compare</a>
-            <a href="/globalreview/laptop-compare.html">Laptops</a>
-            <a href="/globalreview/cpu-compare.html" translate="no">CPU</a>
-            <a href="/globalreview/gpu-compare.html" translate="no">GPU</a>
+            <a href="/globalreview/index.html" class="logo" aria-labelledby="logoTitle" id="nav-globalreview"></a>
+            <a href="/globalreview/phone-compare.html" id="nav-smartphones"></a>
+            <a href="/globalreview/soc-ranking.html" id="nav-soc-ranking"></a>
+            <a href="/globalreview/soc-compare.html" id="nav-soc-compare"></a>
+            <a href="/globalreview/laptop-compare.html" id="nav-laptops"></a>
+            <a href="/globalreview/cpu-compare.html" translate="no" id="nav-cpu"></a>
+            <a href="/globalreview/gpu-compare.html" translate="no" id="nav-gpu"></a>
         </div>
 
         <div class="button-group">
-            <div class="section-title section-comparaciones">Comparisons</div>
-            <a href="/globalreview/phone-compare.html"><img src="/globalreview/images/Comparisons.png" class="menu-icon">Smartphones</a>
-            <a href="/globalreview/laptop-compare.html"><img src="/globalreview/images/Comparisons.png" class="menu-icon">Laptops</a>
-            <a href="/globalreview/soc-compare.html"><img src="/globalreview/images/Comparisons.png" class="menu-icon">SoC</a>
-            <a href="/globalreview/cpu-compare.html" translate="no"><img src="/globalreview/images/Comparisons.png" class="menu-icon">CPU</a>
-            <a href="/globalreview/gpu-compare.html"><img src="/globalreview/images/Comparisons.png" class="menu-icon">Graphics Cards</a>
-            <div class="section-title section-rankings">Rankings</div>
-            <a href="/globalreview/soc-ranking.html"><img src="/globalreview/images/Ranking.png" class="menu-icon">Mobile SoC</a>
-            <a href="/globalreview/desktop-cpu-ranking.html"><img src="/globalreview/images/Ranking.png" class="menu-icon">Desktop Processors</a>
-            <a href="/globalreview/laptop-cpu-ranking.html"><img src="/globalreview/images/Ranking.png" class="menu-icon">Laptop Processors</a>
-            <a href="/globalreview/desktop-gpu-ranking.html"><img src="/globalreview/images/Ranking.png" class="menu-icon">Desktop GPU</a>
-            <a href="/globalreview/laptop-gpu-ranking.html"><img src="/globalreview/images/Ranking.png" class="menu-icon">Laptop GPU</a>
-            <a href="/globalreview/dxomark-ranking.html"><img src="/globalreview/images/Ranking.png" class="menu-icon">DxOMark</a>
+            <div class="section-title section-comparaciones" id="section-comparisons"></div>
+            <a href="/globalreview/phone-compare.html" id="btn-smartphones"><img src="/globalreview/images/Comparisons.png" class="menu-icon"><span></span></a>
+            <a href="/globalreview/laptop-compare.html" id="btn-laptops"><img src="/globalreview/images/Comparisons.png" class="menu-icon"><span></span></a>
+            <a href="/globalreview/soc-compare.html" id="btn-soc"><img src="/globalreview/images/Comparisons.png" class="menu-icon"><span></span></a>
+            <a href="/globalreview/cpu-compare.html" translate="no" id="btn-cpu"><img src="/globalreview/images/Comparisons.png" class="menu-icon"><span></span></a>
+            <a href="/globalreview/gpu-compare.html" id="btn-gpu"><img src="/globalreview/images/Comparisons.png" class="menu-icon"><span></span></a>
+            <div class="section-title section-rankings" id="section-rankings"></div>
+            <a href="/globalreview/soc-ranking.html" id="btn-soc-ranking"><img src="/globalreview/images/Ranking.png" class="menu-icon"><span></span></a>
+            <a href="/globalreview/desktop-cpu-ranking.html" id="btn-desktop-cpu"><img src="/globalreview/images/Ranking.png" class="menu-icon"><span></span></a>
+            <a href="/globalreview/laptop-cpu-ranking.html" id="btn-laptop-cpu"><img src="/globalreview/images/Ranking.png" class="menu-icon"><span></span></a>
+            <a href="/globalreview/desktop-gpu-ranking.html" id="btn-desktop-gpu"><img src="/globalreview/images/Ranking.png" class="menu-icon"><span></span></a>
+            <a href="/globalreview/laptop-gpu-ranking.html" id="btn-laptop-gpu"><img src="/globalreview/images/Ranking.png" class="menu-icon"><span></span></a>
+            <a href="/globalreview/dxomark-ranking.html" id="btn-dxomark"><img src="/globalreview/images/Ranking.png" class="menu-icon"><span></span></a>
         </div>
 
         <span class="search-icon" id="openSearch" style="margin-left:15px; margin-right:15px; cursor:pointer;">
@@ -46,7 +46,6 @@
             </svg>
         </span>
     </nav>
-
     <div id="searchOverlay" class="search-overlay">
         <div id="searchMenu" class="search-modal">
             <form id="form-busqueda" class="form-busqueda">
@@ -63,6 +62,7 @@
 
     <script src="/globalreview/js/script.js"></script>
     <script src="/globalreview/js/data-smartphones.js"></script>
+    <script src="/globalreview/js/website-info.js"></script>
 
 </body>
 
