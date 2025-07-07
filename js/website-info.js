@@ -1,5 +1,5 @@
 const navTexts = {
-    globalreview: "MoisesGP.Net",
+    globalreview: "GlobalReview.Net",
     smartphones: "Smartphones",
     socRanking: "SoC Ranking",
     socCompare: "SoC Compare",
