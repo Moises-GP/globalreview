@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const barraPantallaCuerpo = document.getElementById("pantalla-cuerpo-barra");
         if (valorPantallaCuerpo && barraPantallaCuerpo) {
             const porcentajePantallaCuerpo = parseFloat(valorPantallaCuerpo.getAttribute("DataValor")) || 0;
-            const porcentaje = Math.min((porcentajePantallaCuerpo / 100) * 100, 100); // ahora 92.3 será 92.3%
+            const porcentaje = Math.min((porcentajePantallaCuerpo / 100) * 100, 100);
             barraPantallaCuerpo.style.width = porcentaje + "%";
         }
     }
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function actualizarBrilloBarra() {
         const valorSpan = document.getElementById("peak-brightness-auto");
         const barraInterna = document.getElementById("brillo-barra-interna");
-        const brilloMaximo = 2372;
+        const brilloMaximo = 2382;
         if (valorSpan && barraInterna) {
             const brilloActual = parseFloat(valorSpan.getAttribute("DataValor")) || 0;
             const porcentaje = Math.min((brilloActual / brilloMaximo) * 100, 100);
@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const multiBar = document.getElementById("geekbench-multi-bar");
     const singleValor = document.getElementById("geekbench-single-valor");
     const multiValor = document.getElementById("geekbench-multi-valor");
-    const singleMax = 3453;
-    const multiMax = 9532;
+    const singleMax = 3451;
+    const multiMax = 9512;
 
     if (singleBar && singleValor) {
         const singleValue = parseInt(singleValor.getAttribute("DataValor")) || 0;
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Barra AnTuTu
     const antutuValor = document.getElementById("antutu-valor");
     const antutuBarra = document.getElementById("antutu-barra");
-    const antutuMax = 3063922;
+    const antutuMax = 3311557;
 
     if (antutuValor && antutuBarra) {
         const valor = parseInt(antutuValor.getAttribute("DataValor")) || 0;
