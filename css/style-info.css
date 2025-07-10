@@ -49,17 +49,6 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    overflow-y: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.info-list::-webkit-scrollbar {
-    display: none;
 }
 
 .info-content ul {
