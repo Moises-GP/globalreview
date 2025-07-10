@@ -148,6 +148,13 @@ document.addEventListener("DOMContentLoaded", function() {
     if (document.getElementById("sensor-size3")) document.getElementById("sensor-size3").innerHTML = maincamera.SensorSize3;
     if (document.getElementById("pixel-size3")) document.getElementById("pixel-size3").innerHTML = maincamera.PixelSize3;
     if (document.getElementById("stabilization4")) document.getElementById("stabilization4").innerHTML = maincamera.Stabilization4;
+    if (document.getElementById("image-resolution5")) document.getElementById("image-resolution5").innerHTML = maincamera.ImageResolution5;
+    if (document.getElementById("aperture4")) document.getElementById("aperture4").innerHTML = maincamera.Aperture4;
+    if (document.getElementById("focal-length4")) document.getElementById("focal-length4").innerHTML = maincamera.FocalLength4;
+    if (document.getElementById("sensor4")) document.getElementById("sensor4").innerHTML = maincamera.Sensor4;
+    if (document.getElementById("sensor-size4")) document.getElementById("sensor-size4").innerHTML = maincamera.SensorSize4;
+    if (document.getElementById("pixel-size4")) document.getElementById("pixel-size4").innerHTML = maincamera.PixelSize4;
+    if (document.getElementById("stabilization5")) document.getElementById("stabilization5").innerHTML = maincamera.Stabilization5;
     if (document.getElementById("dxomark-foto-valor") && maincamera.PhotoQuality) {
         document.getElementById("dxomark-foto-valor").textContent = maincamera.PhotoQuality.value;
         document.getElementById("dxomark-foto-valor").setAttribute("DataValor", maincamera.PhotoQuality.dataValor);
@@ -165,14 +172,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     if (document.getElementById("megapixels")) document.getElementById("megapixels").innerHTML = selfiecamera.Megapixels;
-    if (document.getElementById("image-resolution5")) document.getElementById("image-resolution5").innerHTML = selfiecamera.ImageResolution5;
-    if (document.getElementById("aperture4")) document.getElementById("aperture4").innerHTML = selfiecamera.Aperture4;
-    if (document.getElementById("focal-length4")) document.getElementById("focal-length4").innerHTML = selfiecamera.FocalLength4;
-    if (document.getElementById("sensor4")) document.getElementById("sensor4").innerHTML = selfiecamera.Sensor4;
-    if (document.getElementById("sensor-size4")) document.getElementById("sensor-size4").innerHTML = selfiecamera.SensorSize4;
-    if (document.getElementById("pixel-size4")) document.getElementById("pixel-size4").innerHTML = selfiecamera.PixelSize4;
+    if (document.getElementById("image-resolution6")) document.getElementById("image-resolution6").innerHTML = selfiecamera.ImageResolution6;
+    if (document.getElementById("aperture5")) document.getElementById("aperture5").innerHTML = selfiecamera.Aperture5;
+    if (document.getElementById("focal-length5")) document.getElementById("focal-length5").innerHTML = selfiecamera.FocalLength5;
+    if (document.getElementById("sensor5")) document.getElementById("sensor5").innerHTML = selfiecamera.Sensor5;
+    if (document.getElementById("sensor-size5")) document.getElementById("sensor-size5").innerHTML = selfiecamera.SensorSize5;
+    if (document.getElementById("pixel-size5")) document.getElementById("pixel-size5").innerHTML = selfiecamera.PixelSize5;
     if (document.getElementById("autofocus2")) document.getElementById("autofocus2").innerHTML = selfiecamera.Autofocus2;
-    if (document.getElementById("Stabilization5")) document.getElementById("Stabilization5").innerHTML = selfiecamera.Stabilization5;
+    if (document.getElementById("Stabilization6")) document.getElementById("Stabilization6").innerHTML = selfiecamera.Stabilization6;
     if (document.getElementById("video-resolution")) document.getElementById("video-resolution").innerHTML = selfiecamera.VideoResolution;
     if (document.getElementById("depth-sensor-tof-3d")) document.getElementById("depth-sensor-tof-3d").innerHTML = selfiecamera.DepthSensorTOF3D;
     if (document.getElementById("dxomark-foto-selfie-valor") && selfiecamera.SelfiePhotoQuality) {
@@ -259,15 +266,15 @@ window.smartphoneSpecs = {
         },
 
         design: {
-            Height: "163 mm (6.42 in)",
-            Width: "77.6 mm (3.06 in)",
-            Thickness: "8.25 mm (0.32 in)",
+            Height: "163 mm (6.42 inches)",
+            Width: "77.6 mm (3.06 inches)",
+            Thickness: "8.25 mm (0.32 inches)",
             Weight: "227 g (8.01 oz)",
             Waterproof: "IP68",
-            AdvancedCooling: "No",
+            AdvancedCooling: "Passive cooling with graphite",
             RearMaterial: "Glass",
             FrameMaterial: "Metal",
-            Colors: "Black, White, Silver, Gold",
+            Colors: "Black, White, Gold, Silver",
             FingerprintScanner: "No",
             ScreenBodyRatio: {value: "92.3%", dataValor: "92.3"}
         },
@@ -306,11 +313,11 @@ window.smartphoneSpecs = {
             GPUShadingUnits: "768",
             GPUClock: "1490 MHz",
             FLOPS: "~2289 GFLOPS",
-            Geekbench6Single: { value: "3436", dataValor: "3436" },
-            Geekbench6Multi: { value: "8506", dataValor: "8506" },
+            Geekbench6Single: { value: "3435", dataValor: "3435" },
+            Geekbench6Multi: { value: "8505", dataValor: "8505" },
             OpenCLScore: "-",
             VulkanScore: "-",
-            GeekbenchComputingGPU: "32712",
+            GeekbenchComputingGPU: "32710",
             AnTuTu10: { value: "1813449", dataValor: "1813449" },
             CPU: "465726",
             GPU: "721738",
@@ -366,24 +373,31 @@ window.smartphoneSpecs = {
             SensorSize3: "1/2.55\"",
             PixelSize3: "0.7 µm",
             Stabilization4: "Digital",
+            ImageResolution5: "-",
+            Aperture4: "-",
+            FocalLength4: "-",
+            Sensor4: "-",
+            SensorSize4: "-",
+            PixelSize4: "-",
+            Stabilization5: "-",
             PhotoQuality: { value: "158", dataValor: "158" },
             VideoQuality: { value: "166", dataValor: "166" },
-            Bokeh: "-",
+            Bokeh: "160",
             Preview: "-",
-            Zoom2: "-",
+            Zoom2: "130",
             MainCameraScore: { value: "161", dataValor: "161" }
         },
 
         selfiecamera:{
             Megapixels: "12 MP",
-            ImageResolution5: "4032 x 3024",
-            Aperture4: "f/1.9",
-            FocalLength4: "23 mm",
-            Sensor4: "Sony IMX714",
-            SensorSize4: "1/3.6\"",
-            PixelSize4: "1.12 µm",
+            ImageResolution6: "4032 x 3024",
+            Aperture5: "f/1.9",
+            FocalLength5: "23 mm",
+            Sensor5: "Sony IMX714",
+            SensorSize5: "1/3.6\"",
+            PixelSize5: "1.12 µm",
             Autofocus2: "Phase autofocus",
-            Stabilization5: "Optical",
+            Stabilization6: "Optical",
             VideoResolution: "2160p (4K) at 60 FPS",
             DepthSensorTOF3D: "Yes",
             SelfiePhotoQuality: { value: "149", dataValor: "149" },
@@ -445,8 +459,8 @@ window.smartphoneSpecs = {
         others: {
             Category: "Flagship",
             ReleaseDate: "September 2024",
-            SARHead: "1.19 W/kg",
-            SARBody: "1.19 W/kg",
+            SARHead: "1.22 W/kg",
+            SARBody: "1.45 W/kg",
             LaunchPrice: "$1,199",
             Sensors: "- Barometer<br> - Promimity sensor<br> - Gyroscope<br> - Accelerometer<br> - Ambient light sensor<br> - Compass<br> - Face recognition sensor"
         }
