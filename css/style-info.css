@@ -13,6 +13,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     margin: 90px auto 15px auto;
+    overflow: hidden;
 }
 
 .info-card h2 {
@@ -27,13 +28,19 @@
 
 .info-content {
     display: flex;
-    align-items: stretch;
-    height: 200px;
+    align-items: flex-start;
 }
 
 .info-img {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
+    max-height: 250px;
     object-fit: contain;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 2px;
+    display: block;
+    box-sizing: border-box;
 }
 
 .info-list {
@@ -45,6 +52,10 @@
     overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .info-list::-webkit-scrollbar {
