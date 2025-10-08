@@ -30,11 +30,15 @@ p {
 
 .card-container {
     max-width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 10px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .card-container, th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #eee;
     text-align: center;
     vertical-align: middle;
 }
