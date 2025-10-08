@@ -18,7 +18,7 @@ function updateNavTexts() {
     cpu: document.getElementById("nav-cpu"),
     gpu: document.getElementById("nav-gpu")
     };
-    
+
     for (const key in navTexts) {
     if (navMap[key]) navMap[key].textContent = navTexts[key];
     }
@@ -39,7 +39,6 @@ const buttonGroupTexts = {
     laptopCpu: "Laptop Processors",
     desktopGpu: "Desktop GPU",
     laptopGpu: "Laptop GPU",
-    dxomark: "DxOMark"
 };
 
 function updateButtonGroupTexts() {
@@ -59,7 +58,6 @@ function updateButtonGroupTexts() {
     laptopCpu: document.querySelector("#btn-laptop-cpu span"),
     desktopGpu: document.querySelector("#btn-desktop-gpu span"),
     laptopGpu: document.querySelector("#btn-laptop-gpu span"),
-    dxomark: document.querySelector("#btn-dxomark span")
     };
     for (const key in btnMap) {
     if (btnMap[key]) btnMap[key].textContent = buttonGroupTexts[key];
