@@ -15,4 +15,3 @@ document.querySelectorAll('.card-header').forEach(header => {
         content.classList.toggle('active');
     });
 });
-
