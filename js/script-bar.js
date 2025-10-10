@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function actualizarBrilloBarra() {
         const valorSpan = document.getElementById("peak-brightness-auto");
         const barraInterna = document.getElementById("brillo-barra-interna");
-        const brilloMaximo = 2382;
+        const brilloMaximo = 2375;
         if (valorSpan && barraInterna) {
             const brilloActual = parseFloat(valorSpan.getAttribute("DataValor")) || 0;
             const porcentaje = Math.min((brilloActual / brilloMaximo) * 100, 100);
@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const multiBar = document.getElementById("geekbench-multi-bar");
     const singleValor = document.getElementById("geekbench-single-valor");
     const multiValor = document.getElementById("geekbench-multi-valor");
-    const singleMax = 3451;
-    const multiMax = 9512;
+    const singleMax = 3693;
+    const multiMax = 9459;
 
     if (singleBar && singleValor) {
         const singleValue = parseInt(singleValor.getAttribute("DataValor")) || 0;
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Barra AnTuTu
     const antutuValor = document.getElementById("antutu-valor");
     const antutuBarra = document.getElementById("antutu-barra");
-    const antutuMax = 3311557;
+    const antutuMax = 3858864;
 
     if (antutuValor && antutuBarra) {
         const valor = parseInt(antutuValor.getAttribute("DataValor")) || 0;
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // 3DMark Wild Life barra
     const wildlifeValor = document.getElementById("wild-life-performance");
     const wildlifeBarra = document.getElementById("wildlife-barra");
-    const wildlifeMax = 21252;
+    const wildlifeMax = 23528;
 
     if (wildlifeValor && wildlifeBarra) {
         const valor = parseInt(wildlifeValor.getAttribute("DataValor")) || 0;
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // PCMark 3.0 barra
     const pcmarkValor = document.getElementById("pcmark-valor");
     const pcmarkBarra = document.getElementById("pcmark-barra");
-    const pcmarkMax = 19982;
+    const pcmarkMax = 25767;
 
     if (pcmarkValor && pcmarkBarra) {
         const valor = parseInt(pcmarkValor.getAttribute("DataValor")) || 0;
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Barra Calidad de la fotografía
     const dxomarkFotoValor = document.getElementById("dxomark-foto-valor");
     const dxomarkFotoBarra = document.getElementById("dxomark-foto-barra");
-    const dxomarkFotoMax = 170;
+    const dxomarkFotoMax = 180;
 
     function actualizarDxOMarkFotoBarra() {
         if (dxomarkFotoValor && dxomarkFotoBarra) {
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Barra Calidad de vídeo
     const dxomarkVideoValor = document.getElementById("dxomark-video-valor");
     const dxomarkVideoBarra = document.getElementById("dxomark-video-barra");
-    const dxomarkVideoMax = 166;
+    const dxomarkVideoMax = 171;
 
     function actualizarDxOMarkVideoBarra() {
         if (dxomarkVideoValor && dxomarkVideoBarra) {
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Barra DxOMark Score
     const dxomarkScoreValor = document.getElementById("dxomark-score-valor");
     const dxomarkScoreBarra = document.getElementById("dxomark-score-barra");
-    const dxomarkScoreMax = 169;
+    const dxomarkScoreMax = 175;
 
     function actualizarDxOMarkBarra() {
         if (dxomarkScoreValor && dxomarkScoreBarra) {
