@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     if (!design) return;
-
+// Design
     if (document.getElementById("height")) document.getElementById("height").innerHTML = design.Height;
     if (document.getElementById("width")) document.getElementById("width").innerHTML = design.Width;
     if (document.getElementById("thickness")) document.getElementById("thickness").innerHTML = design.Thickness;
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("screen-body-ratio").textContent = design.ScreenBodyRatio.value;
         document.getElementById("screen-body-ratio").setAttribute("DataValor", design.ScreenBodyRatio.dataValor);
     }
-    
+// Display
     if (document.getElementById("type")) document.getElementById("type").innerHTML = display.Type;
     if (document.getElementById("size")) document.getElementById("size").innerHTML = display.Size;
     if (document.getElementById("resolution")) document.getElementById("resolution").innerHTML = display.Resolution;
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("peak-brightness-auto").innerHTML = display.PeakBrightnessTestAuto.value;
         document.getElementById("peak-brightness-auto").setAttribute("DataValor", display.PeakBrightnessTestAuto.dataValor);
     }
-
+// Performance
     if (document.getElementById("chipset")) document.getElementById("chipset").innerHTML = performance.Chipset;
     if (document.getElementById("max-clock")) document.getElementById("max-clock").innerHTML = performance.MaxClock;
     if (document.getElementById("cpu-cores")) document.getElementById("cpu-cores").innerHTML = performance.CPUCores;
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (document.getElementById("photo-editing")) document.getElementById("photo-editing").innerHTML = performance.PhotoEditing;
     if (document.getElementById("data-manipulation")) document.getElementById("data-manipulation").innerHTML = performance.DataManipulation;
     if (document.getElementById("writing-score")) document.getElementById("writing-score").innerHTML = performance.WritingScore;
-
+// Main Camera
     if (document.getElementById("matrix")) document.getElementById("matrix").innerHTML = maincamera.Matrix;
     if (document.getElementById("image-resolution")) document.getElementById("image-resolution").innerHTML = maincamera.ImageResolution;
     if (document.getElementById("zoom")) document.getElementById("zoom").innerHTML = maincamera.Zoom;
@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("dxomark-score-valor").textContent = maincamera.MainCameraScore.value;
         document.getElementById("dxomark-score-valor").setAttribute("DataValor", maincamera.MainCameraScore.dataValor);
     }
-
+// Selfie Camera
     if (document.getElementById("megapixels")) document.getElementById("megapixels").innerHTML = selfiecamera.Megapixels;
     if (document.getElementById("image-resolution6")) document.getElementById("image-resolution6").innerHTML = selfiecamera.ImageResolution6;
     if (document.getElementById("aperture5")) document.getElementById("aperture5").innerHTML = selfiecamera.Aperture5;
@@ -185,7 +185,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("dxomark-score-selfie-valor").innerHTML = selfiecamera.SelfieCameraScore.value;
         document.getElementById("dxomark-score-selfie-valor").setAttribute("DataValor", selfiecamera.SelfieCameraScore.dataValor);
     }
-
+// Memory
     if (document.getElementById("ram-size")) document.getElementById("ram-size").innerHTML = memory.RAMSize;
     if (document.getElementById("memory-type")) document.getElementById("memory-type").innerHTML = memory.MemoryType;
     if (document.getElementById("memory-clock")) document.getElementById("memory-clock").innerHTML = memory.MemoryClock;
@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (document.getElementById("storage-size")) document.getElementById("storage-size").innerHTML = memory.StorageSize;
     if (document.getElementById("storage-type")) document.getElementById("storage-type").innerHTML = memory.StorageType;
     if (document.getElementById("memory-card")) document.getElementById("memory-card").innerHTML = memory.MemoryCard;
-
+// Battery
     if (document.getElementById("battery-type")) document.getElementById("battery-type").innerHTML = battery.BatteryType;
     if (document.getElementById("capacity")) document.getElementById("capacity").innerHTML = battery.Capacity;
     if (document.getElementById("max-charge-power")) document.getElementById("max-charge-power").innerHTML = battery.MaxChargePower;
@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("bateria-duracion-valor").innerHTML = battery.GeneralBatteryLife.value;
         document.getElementById("bateria-duracion-valor").setAttribute("DataValor", battery.GeneralBatteryLife.dataValor);
     }
-
+// Connectivity
     if (document.getElementById("wifi-standard")) document.getElementById("wifi-standard").innerHTML = connectivity.WiFiStandard;
     if (document.getElementById("wifi-features")) document.getElementById("wifi-features").innerHTML = connectivity.WiFiFeatures;
     if (document.getElementById("bluetooth-version")) document.getElementById("bluetooth-version").innerHTML = connectivity.BluetoothVersion;
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (document.getElementById("hybrid-slot")) document.getElementById("hybrid-slot").innerHTML = connectivity.HybridSlot;
     if (document.getElementById("esim-support")) document.getElementById("esim-support").innerHTML = connectivity.eSimSupport;
     if (document.getElementById("support-5g")) document.getElementById("support-5g").innerHTML = connectivity.Support5G;
-
+// Sound
     if (document.getElementById("speakers")) document.getElementById("speakers").innerHTML = sound.Speakers;
     if (document.getElementById("dolby-atmos")) document.getElementById("dolby-atmos").innerHTML = sound.DolbyAtmos;
     if (document.getElementById("headphones-audio-jack")) document.getElementById("headphones-audio-jack").innerHTML = sound.HeadphoneAudioJack;
@@ -234,13 +234,13 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("volumen-maximo-valor").innerHTML = sound.MaxLoudness.value;
         document.getElementById("volumen-maximo-valor").setAttribute("DataValor", sound.MaxLoudness.dataValor);
     }
-
+// Others
     if (document.getElementById("category")) document.getElementById("category").innerHTML = others.Category;
     if (document.getElementById("release-date")) document.getElementById("release-date").innerHTML = others.ReleaseDate;
     if (document.getElementById("sar-head")) document.getElementById("sar-head").innerHTML = others.SARHead;
     if (document.getElementById("sar-body")) document.getElementById("sar-body").innerHTML = others.SARBody;
     if (document.getElementById("launch-price")) document.getElementById("launch-price").innerHTML = others.LaunchPrice;
-    if (document.getElementById("release-date")) document.getElementById("sensors").innerHTML = others.Sensors;
+    if (document.getElementById("sensors")) document.getElementById("sensors").innerHTML = others.Sensors;
 });
 
 window.smartphoneSpecs = {
@@ -278,7 +278,7 @@ window.smartphoneSpecs = {
             PWM: "240 Hz",
             ResponseTime: "1 ms",
             Contrast: "∞ Infinity",
-            PeakBrightnessTestAuto: {value: "1802 nits", dataValor: "1802"}
+            PeakBrightnessTestAuto: {value: "1809 nits", dataValor: "1809"}
         },
 
         performance: {
@@ -294,17 +294,17 @@ window.smartphoneSpecs = {
             GPUShadingUnits: "768",
             GPUClock: "1490 MHz",
             FLOPS: "~2289 GFLOPS",
-            Geekbench6Single: { value: "3435", dataValor: "3435" },
+            Geekbench6Single: { value: "3426", dataValor: "3426" },
             Geekbench6Multi: { value: "8505", dataValor: "8505" },
             OpenCLScore: "-",
             VulkanScore: "-",
-            GeekbenchComputingGPU: "32710",
-            AnTuTu10: { value: "1813449", dataValor: "1813449" },
-            CPU: "465726",
-            GPU: "721738",
-            Memory: "250875",
-            UX: "375110",
-            TotalScore: "1813449",
+            GeekbenchComputingGPU: "32599",
+            AnTuTu10: { value: "1886242", dataValor: "1886242" },
+            CPU: "480331",
+            GPU: "757727",
+            Memory: "267594",
+            UX: "380590",
+            TotalScore: "1886242",
             WildLifePerformance: { value: "-", dataValor: "-" },
             GraphicsScore: "-",
             GraphicsTest: "-",
@@ -332,7 +332,7 @@ window.smartphoneSpecs = {
             AngleWidestLens: "120°",
             Lenses: "1) Standard: 48 MP<br> 2) Telephoto: 12 MP<br> 3) Ultrawide: 48 MP",
             CameraFeatures: "- Bokeh Mode<br>- Pro Mode<br>- RAW Support",
-            ImageResolution2: "8064 x 6048",
+            ImageResolution2: "48 MP",
             Aperture: "f/1.8",
             FocalLength: "24 mm",
             Sensor: "Sony IMX803",
