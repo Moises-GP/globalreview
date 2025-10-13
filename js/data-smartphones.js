@@ -13,6 +13,10 @@ window.productos = [
         url: "/globalreview/smartphones/apple/iphone-17.html"
     },
     {
+        nombre: "Apple iPhone Air",
+        url: "/globalreview/smartphones/apple/iphone-air.html"
+    },
+    {
         nombre: "Apple iPhone 16 Pro Max",
         url: "/globalreview/smartphones/apple/iphone-16-pro-max.html"
     },
@@ -758,4 +762,5 @@ document.getElementById('searchOverlay').addEventListener('click', function(e) {
         document.getElementById('busqueda').value = '';
         sugerencias.style.display = 'none';
     }
+
 });
