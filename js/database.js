@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (document.getElementById("max-clock")) document.getElementById("max-clock").innerHTML = performance.MaxClock;
     if (document.getElementById("cpu-cores")) document.getElementById("cpu-cores").innerHTML = performance.CPUCores;
     if (document.getElementById("architecture")) document.getElementById("architecture").innerHTML = performance.Architecture;
+    if (document.getElementById("cache")) document.getElementById("cache").innerHTML = performance.Cache;
     if (document.getElementById("manufacturing")) document.getElementById("manufacturing").innerHTML = performance.Manufacturing;
     if (document.getElementById("lithography-process")) document.getElementById("lithography-process").innerHTML = performance.LithographyProcess;
     if (document.getElementById("neural-processor")) document.getElementById("neural-processor").innerHTML = performance.NeuralProcessor;
@@ -285,6 +286,7 @@ window.smartphoneSpecs = {
             MaxClock: "4040 MHz",
             CPUCores: "6 (2 + 4)",
             Architecture: "- 4 cores at 2.42 GHz: Sawtooth<br>- 2 cores at 4.05 GHz: Everest",
+            Cache: "-",
             Manufacturing: "TSMC",
             LithographyProcess: "3 nm",
             NeuralProcessor: "Neural Engine",
