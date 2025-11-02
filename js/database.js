@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    document.addEventListener("DOMContentLoaded", function() {
     const modelKey = document.body.getAttribute("data-model");
     if (!modelKey || !window.smartphoneSpecs[modelKey]) return;
 
@@ -2071,7 +2071,7 @@ window.smartphoneSpecs = {
         }
     },
 
-"apple-iphone-14-pro-max": {
+    "apple-iphone-14-pro-max": {
         design: {
             Height: "160.7 mm (6.33 inches)",
             Width: "77.6 mm (3.06 inches)",
@@ -2882,6 +2882,208 @@ window.smartphoneSpecs = {
             Sensors: "- Barometer<br> - Promimity sensor<br> - Gyroscope<br> - Accelerometer<br> - Ambient light sensor<br> - Compass<br> - Face recognition sensor"
         }
     },
+
+    "apple-iphone-13-pro-max": {
+        design: {
+            Height: "160.8 mm (6.33 inches)",
+            Width: "78.1 mm (3.07 inches)",
+            Thickness: "7.65 mm (0.3 inches)",
+            Weight: "240 g (8.47 oz)",
+            Waterproof: "IP68",
+            AdvancedCooling: "Passive cooling with graphite",
+            RearMaterial: "Glass",
+            FrameMaterial: "Metal",
+            Colors: "Black, Silver, Blue, Gold, Green",
+            FingerprintScanner: "No",
+            ScreenBodyRatio: {value: "87.7%", dataValor: "87.7"}
+        },
+        
+        display: {
+            Type: "OLED",
+            Size: "6.7 inches",
+            Resolution: "1284 x 2778 pixels",
+            AspectRatio: "19.5:9",
+            PPI: "458 ppi",
+            RefreshRate: "120 Hz",
+            AdaptiveRefreshRate: "Yes (10-120 Hz)",
+            TouchSamplingRate: "-",
+            HDRSupport: "Yes, Dolby Vision",
+            MaxBrightness: "1000 nits",
+            MaxBrightnessHDR: "1200 nits",
+            ScreenProtection: "Ceramic Shield",
+            ScreenBodyRatio2: "87.7%",
+            DisplayFeatures: "- DCI-P3",
+            RGBColorSpace: "99.9%",
+            PWM: "238 Hz",
+            ResponseTime: "8.5 ms",
+            Contrast: "∞ Infinity",
+            PeakBrightnessTestAuto: {value: "1056 nits", dataValor: "1056"}
+        },
+
+        performance: {
+            Chipset: "Apple A15 Bionic",
+            MaxClock: "3230 MHz",
+            CPUCores: "6 (2 + 4)",
+            Architecture: "- 4 cores at 2.02 GHz: Blizzard<br>- 2 cores at 3.23 GHz: Avalanche",
+            Cache: "-",
+            Manufacturing: "TSMC",
+            LithographyProcess: "5 nm",
+            NeuralProcessor: "Apple Neural Engine",
+            Graphics: "Apple A15 GPU",
+            GPUShadingUnits: "640",
+            GPUClock: "1338 MHz",
+            FLOPS: "~1712.6 GFLOPS",
+            Geekbench6Single: { value: "2343", dataValor: "2343" },
+            Geekbench6Multi: { value: "5744", dataValor: "5744" },
+            OpenCLScore: "-",
+            VulkanScore: "-",
+            GeekbenchComputingGPU: "20055",
+            AnTuTu10: { value: "1404180", dataValor: "1404180" },
+            CPU: "333287",
+            GPU: "505296",
+            Memory: "241446",
+            UX: "324151",
+            TotalScore: "1404180",
+            WildLifePerformance: { value: "9445", dataValor: "9445" },
+            GraphicsScore: "9445",
+            GraphicsTest: "56 FPS",
+            Stability: "82%",
+            MaxSurfaceTemperature: "45.8 °C",
+            PCMark: { value: "-", dataValor: "-" },
+            WebScore: "-",
+            VideoEditing: "-",
+            PhotoEditing: "-",
+            DataManipulation: "-",
+            WritingScore: "-"
+        },
+
+        maincamera: {
+            Matrix: "12 MP",
+            ImageResolution: "4032 x 3024",
+            Zoom: "Optical, 3x",
+            MaximumZoom: "Digital, 15x",
+            Flash: "Dual LED",
+            Stabilization: "Optical",
+            Video8K: "No",
+            Video4K: "Up to 60 FPS",
+            Video1080p: "Up to 60 FPS",
+            SlowMotion: "240 FPS (1080p)",
+            AngleWidestLens: "120°",
+            Lenses: "1) Standard: 12 MP<br> 2) Telephoto: 12 MP<br> 3) Ultrawide: 12 MP",
+            CameraFeatures: "- Bokeh Mode<br>- Pro Mode<br>- RAW Support",
+            ImageResolution2: "12 MP",
+            Aperture: "f/1.5",
+            FocalLength: "26 mm",
+            Sensor: "Sony IMX703",
+            SensorSize: "1/1.66\"",
+            PixelSize: "1.9 µm",
+            Autofocus: "Phase autofocus (Dual Pixel)",
+            Stabilization2: "Optical",
+            ImageResolution3: "12 MP",
+            Aperture2: "f/2.8",
+            FocalLength2: "77 mm",
+            Sensor2: "Sony IMX713",
+            SensorSize2: "1/3.4\"",
+            PixelSize2: "1 µm",
+            Stabilization3: "Optical",
+            ImageResolution4: "12 MP",
+            Aperture3: "f/1.8",
+            FocalLength3: "13 mm",
+            Sensor3: "Sony IMX772",
+            SensorSize3: "1/3.4\"",
+            PixelSize3: "1 µm",
+            Stabilization4: "Digital",
+            ImageResolution5: "-",
+            Aperture4: "-",
+            FocalLength4: "-",
+            Sensor4: "-",
+            SensorSize4: "-",
+            PixelSize4: "-",
+            Stabilization5: "-",
+            PhotoQuality: { value: "140", dataValor: "140" },
+            VideoQuality: { value: "146", dataValor: "146" },
+            Bokeh: "75",
+            Preview: "81",
+            Zoom2: "119",
+            MainCameraScore: { value: "141", dataValor: "141" }
+        },
+
+        selfiecamera:{
+            Megapixels: "12 MP",
+            ImageResolution6: "4032 x 3024",
+            Aperture5: "f/2.2",
+            FocalLength5: "23 mm",
+            Sensor5: "Sony IMX514",
+            SensorSize5: "1/3.6\"",
+            PixelSize5: "1 µm",
+            Autofocus2: "Phase autofocus (Dual Pixel)",
+            Stabilization6: "Digital",
+            VideoResolution: "2160p (4K) at 60 FPS",
+            DepthSensorTOF3D: "Yes",
+            SelfiePhotoQuality: { value: "128", dataValor: "128" },
+            SelfieVideoQuality: { value: "143", dataValor: "143" },
+            SelfieCameraScore: { value: "134", dataValor: "134" }
+        },
+
+        memory: {
+            RAMSize: "6 GB",
+            MemoryType: "LPDDR4X",
+            MemoryClock: "2133 MHz",
+            Channels: "2",
+            StorageSize: "128, 256, 512, 1024 GB",
+            StorageType: "NVMe",
+            MemoryCard: "No"
+        },
+
+        battery: {
+            BatteryType: "Li-Ion",
+            Capacity: "4352 mAh",
+            MaxChargePower: "23 W",
+            WirelessCharging: "Yes (7.5 W)",
+            ReverseCharging: "No",
+            FastCharging: "Yes (42% in 30 min)",
+            FullChargingTime: "1:46 hr",
+            WebBrowsing: "11:16 hr",
+            WatchingVideo: "17:03 hr",
+            Gaming: "06:41 hr",
+            Standby: "136 hr",
+            GeneralBatteryLife: { value: "28:08 hr", dataValor: "28.08" }
+        },
+
+        connectivity: {
+            WiFiStandard: "Wi-Fi 6 (802.11 a/b/g/n/ac/ax)",
+            WiFiFeatures: "- Dual Band<br> - Wi-Fi MIMO<br> - Wi-Fi Direct<br> - Wi-Fi Hotspot<br> - Wi-Fi Display",
+            BluetoothVersion: "5",
+            BluetoothFeatures: "LE, A2DP",
+            USBType: "Lightning",
+            USBVersion: "2",
+            USBFeatures: "- Charging<br> - USB-Storage Mode<br> - OTG",
+            DispalyPort: "Yes",
+            GPS: "GPS, GLONASS, Beidou, Galileo, QZSS",
+            NFC: "Yes",
+            InfraredPort: "No",
+            TypeSIMCard: "Nano",
+            NumberSIM: "1",
+            HybridSlot: "No",
+            eSimSupport: "Yes",
+            Support5G: "Yes"
+        },
+
+        sound: {
+            Speakers: "Stereo",
+            DolbyAtmos: "Yes",
+            HeadphoneAudioJack: "No",
+            MaxLoudness: { value: "80.2 dB", dataValor: "80.2" }
+        },
+
+        others: {
+            Category: "Flagship",
+            ReleaseDate: "September 2021",
+            SARHead: "0.99 W/kg",
+            SARBody: "0.98 W/kg",
+            LaunchPrice: "$1,099",
+            Sensors: "- Barometer<br> - Promimity sensor<br> - Gyroscope<br> - Accelerometer<br> - Ambient light sensor<br> - Compass<br> - Face recognition sensor"
+        }
+    },
 //more smartphones...
 };
-
