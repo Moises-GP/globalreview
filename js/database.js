@@ -3276,7 +3276,7 @@ window.smartphoneSpecs = {
             Speakers: "Stereo",
             DolbyAtmos: "Yes",
             HeadphoneAudioJack: "No",
-            MaxLoudness: { value: "80.2 dB", dataValor: "80.2" }
+            MaxLoudness: { value: "-", dataValor: "-" }
         },
 
         others: {
@@ -3290,3 +3290,4 @@ window.smartphoneSpecs = {
     },
 //more smartphones...
 };
+
